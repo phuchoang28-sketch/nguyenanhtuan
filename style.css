@@ -1,0 +1,152 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 50px;
+}
+.logo h2 {
+  margin-top: 10px;
+  color: #f97316;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 5px;
+}
+.menu a.active, .menu a:hover {
+  background: #f97316;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f97316;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.settings {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.welcome {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.stat-card .number {
+  font-size: 2rem;
+  color: #f97316;
+  font-weight: bold;
+}
+
+
+.classes h2 {
+  margin-bottom: 15px;
+}
+.class-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.status {
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+.status.ongoing {
+  background: #f97316;
+  color: white;
+}
+.status.upcoming {
+  background: #ffdcb3;
+  color: #7a4b00;
+}
+
+.join-btn, .remind-btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.join-btn {
+  background: #f97316;
+  color: white;
+}
+.remind-btn {
+  background: #eee;
+}
